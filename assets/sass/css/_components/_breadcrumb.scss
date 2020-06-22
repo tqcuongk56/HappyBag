@@ -1,0 +1,53 @@
+.breadcrumb {
+    background-color: #f1f1f1;
+    @include clear_box;
+    position: relative;
+    z-index: 2;
+    ul {
+        float: left;
+        width: 100%;
+        li {
+            float: left;
+            margin-right: 15px;
+            position: relative;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:after {
+                content: "»";
+                padding: 10px;
+                color: #222;
+                display: inline-block;
+            }
+            &:last-child:after {
+                content: "";
+                display: none;
+            }
+            a {
+                display: block;
+                float: left;
+                font-weight: normal;
+                color: #000;
+                padding: 15px 0;
+            }
+            &:last-child {
+                a {
+                    color: #000000;
+                }
+            }
+            &:after{
+                content: '/';
+                top: 50%;
+                transform: translateY(-50%);
+                right: -10px;
+                position: absolute;
+                padding: 0;            
+            }
+            span{
+                padding: 15px 0;
+                display: block;
+                float: left;
+            }
+        }
+    }
+}

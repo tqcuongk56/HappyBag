@@ -1,0 +1,167 @@
+.post-info{    
+    background-color: $bg_color;
+    padding: 50px 0 60px;
+    &__main{
+        font-family: $font_robo;
+        color: #333;
+        line-height: 30px;
+        margin-bottom: 60px;
+        .post-title{            
+            h3{
+                color: #d81b1c;
+                font-size: 24px;
+                font-weight: normal;
+            }
+        }
+        .post-meta{
+            color: #999;
+            letter-spacing: -0.3em;
+            &__date,
+            &__author{
+                display: inline-block;
+                letter-spacing: normal;
+                span{
+                    font-weight: 300;
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+            &__date{
+                margin-right: 25px;
+            }
+        }
+        .post-content{
+            margin-bottom: 10px;
+            p{
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            a{
+                color: #d81b1c;
+            }
+            ul{
+                li{
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                    list-style: disc;
+                    margin-left: 35px;
+                    padding-left: 5px;
+                }
+            }
+            figure{
+                margin-bottom: 10px;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                figcaption{
+                    text-align: center;
+                }
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5{
+                margin-bottom: 8px;
+            }
+        }
+        .post-share{
+            ul{
+                letter-spacing: -0.3em;
+                text-align: right;
+                li{
+                    letter-spacing: normal;
+                    display: inline-block;
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    line-height: 32px;
+                    margin: 0 3px;
+                    color: #fff;
+                    cursor: pointer;
+                    &:first-child{
+                        background-color:#3b5998;
+                    }
+                    &:nth-child(2n){
+                        background-color:#1da1f2;
+                    }
+                    &:nth-child(3n){
+                        background-color:#738a8d;
+                    }
+                    &:nth-child(4n){
+                        background-color:#848484;
+                    }
+                    &:last-child{
+                        background-color:#ff6550;
+                    }
+                }
+            }
+        }
+    }
+    .post-related{
+        &__title{
+            h3{
+                font-family: $font_mont;
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+        }
+        .owl-carousel{
+            .item{
+                &-thumbnail{
+                    height: 195px;
+                    overflow: hidden;
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    img{
+                        transition: all .3s;
+                        height: 100%;
+                    }                
+                }
+                &-content{
+                    padding: 10px;
+                    background-color: #f0f0f0;
+                    .date{
+                        color: #ee1f65;
+                    }
+                    .title{
+                        color: #000;
+                        line-height: 28px;
+                    }
+                }
+            }
+             .owl-nav{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);    
+                width: 100%;                
+                    button{
+                        top: -45%;
+                        transform: translateY(-50%);    
+                        color: #999999;  
+                        left: -30px; 
+                        position: absolute;                     
+                        i{
+                            font-size: 50px;
+                        }
+                        &.owl-next{
+                            left: auto;
+                            right: -30px;
+                        }
+                    }
+            }
+        }
+       
+    }
+}

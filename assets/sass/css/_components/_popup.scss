@@ -1,0 +1,95 @@
+.popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(204,204,204,.5);
+    z-index: 9;
+    font-family: $font_robo;
+    display: none;
+    &-close{
+        cursor: pointer;
+    }
+    &-content{
+        max-width: 600px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        text-align: left;   
+        padding: 15px 0;
+        border: 1px solid #dc1f26;
+        border-radius: 5px;     
+    }
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 15px 15px;
+        margin-bottom: 18px;
+        h2{
+            color: #dc1f26;
+            font-size: 20px;
+            font-weight: 500;    
+        }
+    }
+    &-form{ 
+        padding: 0 15px;
+        &__title{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &__desc{
+            text-align: center;
+            text-transform: none !important;
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        form{
+            textarea{
+                resize: vertical;
+            }
+            input,
+            textarea{
+                width: 100%;
+                padding: 8px 15px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #9e9e9e; 
+                font-family: $font_robo;
+                font-size: 14px;               
+            }
+            input[name="email"],
+            input[name="phone"],
+            input[name="quantity"] {
+              width: calc(50% - 15px);
+              float: left;
+            }
+            input[name="phone"]{
+                margin-left: 30px;
+            }
+            input[name="value"]{
+                color: #dc1f26;
+                background-color: #ededed;
+            }
+            button{
+                max-width: 160px;
+                width: 100%;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #dc1f26;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 0;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

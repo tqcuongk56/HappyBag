@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1366px) {
+}
+@media only screen and (max-width: 1024px) {
+	.product-detail__main{
+		.number-btn{
+			flex: 0 0 150px !important; 
+		}		
+	}
+}
+@media only screen and (max-width: 991px) {
+	.product{
+		&-preview{
+			flex: 0 0 40%;
+			max-width: 40%;
+			margin-bottom: 30px;
+		}
+		&-detail{
+			flex: 0 0 60%;
+			padding-right: 0;
+		}
+		&-promise{
+			flex: 0 0 100%;
+		}
+		&-comment{
+			margin-bottom: 20px;
+		}
+
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    .product{
+    	&-preview{
+    		flex: 0 0 100%;
+    		max-width: 100%;
+    	}
+    	&-detail{
+    		flex: 0 0 100%;
+    		padding: 0;
+    	}
+    	&-review{
+    		max-width: 100%;
+    		.tabContents{
+    			img{
+    				width: 100%;
+    			}
+    		}
+    	}
+    	&-related{
+    		.owl-carousel{
+                .owl-nav{
+                    button{
+                        height: 40px;
+                        width: 24px;
+                        text-align: center;
+                        line-height: 40px;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        i{
+                            font-size: 35px;
+                            color: #fff;
+                        }
+                        &.owl-prev{
+                            left: 0;
+                        }
+                        &.owl-next{
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }
+                .item{
+                    &-thumbnail{
+                    	max-width: 100%;
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+    	}
+    }
+}
+@media only screen and (max-width: 540px) {
+	.product-review{
+		margin-bottom: 0;
+		.tabContents{
+			padding-bottom: 0;
+		}
+	}
+    
+}
+@media only screen and (max-width: 480px) {
+	.product-preview__big{
+		img{
+			min-height: 260px;
+		}
+	}
+	.product{
+		&-related{
+			.owl-carousel{
+				.owl-item{
+					.item-content__title {
+						h3{
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 320px) {
+
+}

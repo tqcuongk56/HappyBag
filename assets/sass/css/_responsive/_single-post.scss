@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1366px) {
+}
+@media only screen and (max-width: 1024px) {
+    
+}
+@media only screen and (max-width: 991px) {
+    .post-info{
+        padding: 30px 0 40px;        
+        .post-info__main{
+            margin-bottom: 20px;
+        }        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .post-info{
+        .post-related{
+            .owl-carousel{
+                .owl-nav{
+                    button{
+                        height: 40px;
+                        width: 24px;
+                        text-align: center;
+                        line-height: 40px;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        i{
+                            font-size: 35px;
+                            color: #fff;
+                        }
+                        &.owl-prev{
+                            left: 0;
+                        }
+                        &.owl-next{
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }
+                .item{
+                    &-thumbnail{
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 540px) {
+    .post-info__main {
+        .post-content {
+            figure {
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .post-info{
+        .post-related{
+            .owl-carousel{
+                .item{
+                    &-thumbnail{
+                        height: 130px;
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) { 
+    .post-info{
+        .post-related{
+            .owl-carousel{
+                .item{
+                    &-thumbnail{
+                        height: 90px;
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
